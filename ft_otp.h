@@ -6,7 +6,7 @@
 /*   By: tblochet <tblochet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/19 20:50:46 by tblochet          #+#    #+#             */
-/*   Updated: 2024/12/01 00:48:13 by tblochet         ###   ########.fr       */
+/*   Updated: 2024/12/01 01:01:06 by tblochet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,4 +45,5 @@ uint32_t					hotp(uint8_t *key, size_t kl, uint64_t interval);
 uint8_t						*hmac_sha1(unsigned char *key, int kl,
 								uint64_t interval);
 uint32_t					dynamic_truncation(uint8_t *digest);
+uint32_t					totp(uint8_t *key, size_t kl, uint64_t time);
 #endif
